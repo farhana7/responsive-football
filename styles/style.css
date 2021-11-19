@@ -1,92 +1,206 @@
- /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 
-/* common styles or utilities */
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color:  white
+/*-----------common styles or utilities------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
 }
-
-
-
-
-
-
-/* top blog style */
-
-.copa-america{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+* {
+  margin: 0;
+  padding: 0;
+}
+/* main{
+    display: flex;
     justify-content: center;
-    background-color: midnightblue;
+} */
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.copa-america h1{
-    
-    width: 485px;
-    height: 230px;
-    border: 1px solid midnightblue;
-    font-size: 64px;
-    font-style: normal;
-    color: white;
-    font-weight: bold;
-}
-.copa-america img{
-    width: 556.01px;
-    height: 438px;
-}
+/*-------------banner styles------------------ */
 
-.link-button{
-    text-decoration: none;
-    background-color: mediumvioletred;
-    padding: 10px, 40px;
-    color: white;
-    font-weight: 100;
-    
+.copa-america {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  background-color: #2d25a0;
+  /* grid-row-gap: 30px; */
+
+  /* padding-left: 156px;
+    padding-top: 207px;
+    padding-bottom: 240px; */
+
+  /* width: 1440px;
+    height: 677px; */
 }
 
- /*---------------
-    players style 
-  ----------------*/
-  .players{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 30px;
-      grid-row-gap: 27px;
+.copa-america h1 {
+  width: 485px;
+  height: 230px;
+  margin-top: 207px;
+  margin-left: 156px;
+  font-size: 64px;
+  line-height: 80px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  border: 1px solid #000000;
+}
+.copa-america img {
+  width: 556.01px;
+  height: 438px;
+}
+
+.link-button {
+  text-decoration: none;
+  background-color: #e02c6d;
+  padding: 10px, 24px, 10px, 24px;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0px 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 10px 24px; */
+  width: 168px;
+  height: 44px;
+}
+
+/*---------------top-players styles----------------*/
+.container {
+  margin-top: 100px;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+
+.single-player {
+  display: block;
+  align-items: flex-start;
+  text-align: left;
+  width: 330px;
+  height: 474px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  margin: 0px 30px;
+  padding: 15px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.single-player .player-img img {
+  /* width: 330px; */
+  /* height: 474px; */
+  width: 300px;
+  height: 256px;
+}
+
+.player-info {
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*-------------extra part styles----------------*/
+.highlights {
+  display: grid;
+  grid-row-gap: 71px;
+  /* grid-template-columns: repeat(2, 1fr);
+      align-items: justify; */
+  margin-top: 250px;
+  margin-bottom: 200px;
+}
+
+.blog {
+  display: flex;
+}
+.blog-info {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 180px;
+}
+.blog-title {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+}
+.blog-author {
+  font-size: 16px;
+  line-height: 28px;
+}
+.blog-button {
+  width: 173px;
+  height: 44px;
+  background: #e02c6d;
+  color: #ffffff;
+  padding: 10px 24px;
+}
+.blog .thumbnail img {
+  width: 567px;
+  height: 427px;
+  margin-left: 71px;
+  margin-right: 156px;
+}
+
+/* -----------------footer styles--------------*/
+/* .footer{
+      display: block;
+    justify-content: center; 
+    margin-bottom: 63px;
+  } */
+.end {
+  /* justify-content: center;
+      align-items: center; */
+  margin-bottom: 63px;
+}
+.logo {
+  width: 483.87px;
+  height: 110px;
+  margin: 20px 0px;
+}
+.social-icons {
+  /* width: 170px;
+    height: 32px; */
+  margin: 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------Media Queries -----------------*/
+
+/* Mobile Devices */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
   }
-
-  .player .player-banner img{
-    width: 330px;
-    height: 474px;
-
+  .copa-america .top-players .highlights .end {
+    grid-template-columns: repeat(1, 1fr);
   }
-
-  .player-info{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  .top-players .highlights {
+    flex-direction: column;
   }
+}
 
-  /* ---------------
-  Media Queries 
-  -----------------*/
-
-
-  /* Mobile Devices */
-
-  @media only screen and (max-width:688px) {
-      main{
-          width: 100%;
-      }
-      .copa-america, .blogs, .players{
-          
-          grid-template-columns: repeat(1, 1fr);
-      }
-      
-      .player, .blog{
-          flex-direction: column;
-      }
-      
-     .players{
-      display: none;
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
   }
+  .copa-america .top-players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
