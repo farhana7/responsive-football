@@ -14,17 +14,14 @@ body {
     display: flex;
     justify-content: center;
 } */
-.container {
-  display: flex;
-  justify-content: center;
-}
 
 /*-------------banner styles------------------ */
 
 .copa-america {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  /* justify-content: center;
+  align-items: center; */
   background-color: #2d25a0;
   /* grid-row-gap: 30px; */
 
@@ -39,47 +36,52 @@ body {
 .copa-america h1 {
   width: 485px;
   height: 230px;
-  margin-top: 207px;
+  margin-top: 120px;
   margin-left: 156px;
   font-size: 64px;
   line-height: 80px;
   color: #ffffff;
   font-style: normal;
   font-weight: bold;
-  border: 1px solid #000000;
 }
 .copa-america img {
   width: 556.01px;
   height: 438px;
+  margin-top: 30px;
 }
 
 .link-button {
   text-decoration: none;
   background-color: #e02c6d;
-  padding: 10px, 24px, 10px, 24px;
+  padding: 10px 10px 10px 25px;
 
   color: #ffffff;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  margin: 0px 8px;
+  margin-left: 156px;
+  margin-bottom: 100px;
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   /* padding: 10px 24px; */
-  width: 168px;
-  height: 44px;
+  width: 120px;
+  height: 30px;
 }
 
 /*---------------top-players styles----------------*/
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
+
 .top-players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 30px;
+  grid-column-gap: 20px;
   grid-row-gap: 27px;
 }
 
@@ -91,7 +93,9 @@ body {
   height: 474px;
   background-color: #ffffff;
   border: 1px solid #ffffff;
+
   margin: 0px 30px;
+
   padding: 15px;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
@@ -106,8 +110,15 @@ body {
 .single-player .player-img img {
   /* width: 330px; */
   /* height: 474px; */
-  width: 300px;
+  width: 330px;
   height: 256px;
+}
+
+.player-title {
+  font-weight: bold;
+  font-size: 28px;
+  /* line-height: 20px; */
+  margin-top: 10px;
 }
 
 .player-info {
@@ -140,8 +151,19 @@ body {
   font-size: 48px;
   line-height: 60px;
   text-align: left;
+  align-items: flex-start;
+  margin: 8px 0px;
+  /* width: 469px;
+  height: 120px; */
+}
+.blog-title2 {
+  font-size: 48px;
+  line-height: 60px;
+  text-align: left;
+  align-items: flex-start;
 }
 .blog-author {
+  color: #6c6c6c;
   font-size: 16px;
   line-height: 28px;
 }
@@ -150,8 +172,11 @@ body {
   height: 44px;
   background: #e02c6d;
   color: #ffffff;
-  padding: 10px 24px;
+  padding: 5px 0px 5px 25px;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .blog .thumbnail img {
   width: 567px;
@@ -159,6 +184,40 @@ body {
   margin-left: 71px;
   margin-right: 156px;
 }
+
+.fa-futbol.filled {
+  color: darkslategray;
+  font-size: 50px;
+}
+.fa-futbol.fil {
+  color: red;
+  font-size: 50px;
+}
+.fa-futbol.fill {
+  color: olivedrab;
+  font-size: 50px;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 170px; */
+  height: 400px;
+}
+.sponsorh {
+  color: orangered;
+  font-size: 48px;
+}
+hr {
+  border: 1px solid green;
+}
+
+/* .sponsor-img {
+  width: 100px;
+  height: 100px;
+} */
 
 /* -----------------footer styles--------------*/
 .footer {
@@ -168,33 +227,22 @@ body {
   align-items: center;
   /* display: block; */
   /* justify-content: center; */
-  margin-bottom: 63px;
+  margin-bottom: 30px;
+  height: 427px;
 }
-/* .end { */
-/* justify-content: center;
-      align-items: center; */
-/* margin-bottom: 63px;
-} */
+
 .logo img {
   width: 483.87px;
   height: 110px;
   margin: 20px 0px;
 }
 .social-icons {
-  /* width: 170px;
-  height: 32px; */
-
   margin: 20px 0px;
-
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
 }
-
-/* .a {
-  
-} */
 
 .fa-instagram {
   color: rgb(214, 55, 55);

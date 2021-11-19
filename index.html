@@ -13,6 +13,18 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      .photo {
+        width: 100%;
+        /* border-radius: 10px; */
+        /* display: none; */
+      }
+      .photo-frame:hover .photo {
+        display: block;
+        transform: scale(1.1) rotate(360deg);
+        transition: transform 2s ease-in-out;
+      }
+    </style>
   </head>
 
   <body>
@@ -25,13 +37,17 @@
       <section class="banner">
         <div class="copa-america">
           <h1>Conmebol Copa America 2021</h1>
-          <img src="images/banner.png" alt="" />
 
+          <div class="photo-frame">
+            <div class="photo">
+              <img src="images/banner.png" alt="" />
+            </div>
+          </div>
           <a
             class="link-button"
             target="_blank"
             href="https://www.footballorgin.com/argentina-v-brazil-full-match-copa-america-final-10-july-2021/"
-            >Watch Live <span><i class="fas fa-arrow-right"></i> </span
+            >Watch Live &nbsp; <span><i class="fas fa-arrow-right"></i> </span
           ></a>
         </div>
       </section>
@@ -77,10 +93,10 @@
               <h3 class="player-title">Cristiano Ronaldo</h3>
               <br />
               <p class="player-details">
-                Ronaldo plays as a forward & captains the Portugal national
-                team.He is one of the few players made over 1,100 professional
-                career appearances & scored over 790 official senior career
-                goals for club & country.
+                Ronaldo plays as a forward,captains the Portugal national team &
+                is one of the few players made over 1,100 professional career
+                appearances & scored over 790 official career goals for club &
+                country.
               </p>
             </div>
           </div>
@@ -162,10 +178,9 @@
               <h3 class="player-title">Mohamed Salah</h3>
               <br />
               <p class="player-details">
-                Mohamed Salah plays as a forward for Premier League club
-                Liverpool and captains the Egypt national team. Considered one
-                of the best players, he is known for his finishing, dribbling,
-                and speed.
+                Mohamed Salah plays as a forward for Liverpool and captains the
+                Egypt national team. Considered one of the best players, he is
+                known for his finishing, dribbling, and speed.
               </p>
             </div>
           </div>
@@ -220,7 +235,8 @@
         <div class="highlights">
           <artical class="blog">
             <div class="blog-info">
-              <h2 class="blog-title">All Highlights Copa America 2021</h2>
+              <h2 class="blog-title">All Highlights</h2>
+              <h2 class="blog-title2">Copa America 2021</h2>
               <br />
               <p class="blog-author">
                 Copa America 2021 final highlights, Brazil vs Argentina:
@@ -229,13 +245,19 @@
                 Maracana Stadium in Rio de Janeiro. Angel Di Maria scored the
                 only goal of the match in the 22nd minute.
               </p>
-              <br />
+
               <a
                 class="blog-button"
                 target="_blank"
                 href="https://www.footballorgin.com/argentina-v-brazil-full-match-copa-america-final-10-july-2021/"
-                >Watch Now <span><i class="fas fa-arrow-right"></i></span
+                >Watch Now &nbsp; <span><i class="fas fa-arrow-right"></i></span
               ></a>
+              <br />
+              <div>
+                <i class="fas fa-futbol filled"></i>
+                <i class="fas fa-futbol fill"></i>
+                <i class="far fa-futbol fil"></i>
+              </div>
             </div>
 
             <div class="thumbnail">
@@ -250,9 +272,14 @@
   <!----------------------- sponsors ---------------->
 
   <section>
-    <div>
-      <h1>Sponsors</h1>
+    <div class="sponsors">
+      <h1 class="sponsorh">Sponsors</h1>
+      <div class="sponsor-img">
+        <img src="images/kwai.png" alt="" />
+        <img src="images/Coca.png" alt="" />
+      </div>
     </div>
+    <hr />
   </section>
 
   <!-------------footer----------------->
@@ -264,21 +291,28 @@
         <img src="images/Logo.png" alt="" />
       </div>
       <div class="social-icons">
-        <div class="a">
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-dribbble"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
+        <div>
+          <a href="https://www.instagram.com/copaamerica/?hl=en" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://dribbble.com/search/Copa%20America%202021"
+            target="_blank"
+          >
+            <i class="fab fa-dribbble"></i
+          ></a>
 
-        <!-- <img src="images/Social Icons/Instagram.png" alt="" />
-        <img src="images/Social Icons/Dribbble.png" alt="" />
-        <img src="images/Social Icons/Twitter.png" alt="" />
-        <img src="images/Social Icons/Youtube.png" alt="" /> -->
+          <a target="_blank" href="https://twitter.com/search?q=%23copaamerica"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a target="_blank" href="https://youtu.be/CrCGGEx-bPs"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
       </div>
       <!-- </div> -->
       <p class="cright">
-        Copyright <span><i class="far fa-copyright"></i></span> 2022 Football
+        Copyright <span><i class="far fa-copyright"></i></span> 2021 Football
       </p>
     </section>
   </footer>
