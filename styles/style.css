@@ -1,5 +1,5 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,700&display=swap");
 
 /*-----------common styles or utilities------------*/
 body {
@@ -96,6 +96,13 @@ body {
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
 
+.player-details {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 26px;
+  /* Weight:400 ;  */
+}
+
 .single-player .player-img img {
   /* width: 330px; */
   /* height: 474px; */
@@ -144,6 +151,7 @@ body {
   background: #e02c6d;
   color: #ffffff;
   padding: 10px 24px;
+  text-decoration: none;
 }
 .blog .thumbnail img {
   width: 567px;
@@ -153,27 +161,71 @@ body {
 }
 
 /* -----------------footer styles--------------*/
-/* .footer{
-      display: block;
-    justify-content: center; 
-    margin-bottom: 63px;
-  } */
-.end {
-  /* justify-content: center;
-      align-items: center; */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  /* justify-content: center; */
   margin-bottom: 63px;
 }
-.logo {
+/* .end { */
+/* justify-content: center;
+      align-items: center; */
+/* margin-bottom: 63px;
+} */
+.logo img {
   width: 483.87px;
   height: 110px;
   margin: 20px 0px;
 }
 .social-icons {
   /* width: 170px;
-    height: 32px; */
+  height: 32px; */
+
   margin: 20px 0px;
-  justify-content: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+/* .a {
+  
+} */
+
+.fa-instagram {
+  color: rgb(214, 55, 55);
+  font-size: 40px;
+  padding: 15px;
+}
+
+.fa-dribbble {
+  color: mediumvioletred;
+  font-size: 40px;
+  padding: 15px;
+}
+
+.fa-twitter {
+  color: dodgerblue;
+  font-size: 40px;
+  padding: 15px;
+}
+.fa-youtube {
+  color: red;
+  font-size: 40px;
+  padding: 15px;
+}
+
+.cright {
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
   align-items: center;
+  text-align: right;
+  margin: 20px 0px;
 }
 
 /* ---------------Media Queries -----------------*/
