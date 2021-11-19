@@ -10,27 +10,13 @@ body {
   margin: 0;
   padding: 0;
 }
-/* main{
-    display: flex;
-    justify-content: center;
-} */
 
 /*-------------banner styles------------------ */
 
 .copa-america {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* justify-content: center;
-  align-items: center; */
   background-color: #2d25a0;
-  /* grid-row-gap: 30px; */
-
-  /* padding-left: 156px;
-    padding-top: 207px;
-    padding-bottom: 240px; */
-
-  /* width: 1440px;
-    height: 677px; */
 }
 
 .copa-america h1 {
@@ -104,7 +90,6 @@ body {
   color: #6c6c6c;
   font-size: 16px;
   line-height: 26px;
-  /* Weight:400 ;  */
 }
 
 .single-player .player-img img {
@@ -128,11 +113,10 @@ body {
 }
 
 /*-------------extra part styles----------------*/
+
 .highlights {
   display: grid;
   grid-row-gap: 71px;
-  /* grid-template-columns: repeat(2, 1fr);
-      align-items: justify; */
   margin-top: 250px;
   margin-bottom: 200px;
 }
@@ -141,7 +125,6 @@ body {
   display: flex;
 }
 .blog-info {
-  /* display: block; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -214,19 +197,12 @@ hr {
   border: 1px solid green;
 }
 
-/* .sponsor-img {
-  width: 100px;
-  height: 100px;
-} */
-
 /* -----------------footer styles--------------*/
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* display: block; */
-  /* justify-content: center; */
   margin-bottom: 30px;
   height: 427px;
 }
@@ -245,7 +221,7 @@ hr {
 }
 
 .fa-instagram {
-  color: rgb(214, 55, 55);
+  color: rgb(141, 5, 5);
   font-size: 40px;
   padding: 15px;
 }
